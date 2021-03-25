@@ -1,4 +1,6 @@
-package nntei_jazyk.interfaces
+package nntei_jazyk.structures
+
+import nntei_jazyk.interfaces.IAbstractStack
 
 class AbstractStackImpl<T> : IAbstractStack<T> {
 

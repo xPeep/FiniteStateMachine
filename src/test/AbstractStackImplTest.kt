@@ -1,14 +1,14 @@
-package interfaces
+package nntei_jazyk.test
 
-import nntei_jazyk.interfaces.AbstractQueueImpl
+import nntei_jazyk.structures.AbstractStackImpl
+
 import org.junit.Assert.*
 
-class AbstractQueueImplTest {
+class AbstractStackImplTest {
 
     @org.junit.Test
     fun add() {
-        val stack = AbstractQueueImpl<Int>()
-
+        val stack = AbstractStackImpl<Int>()
         stack.add(1)
         stack.add(2)
         stack.add(3)
@@ -21,16 +21,16 @@ class AbstractQueueImplTest {
         val fourth = stack.peek()
         val fifth = stack.peek()
 
-        assertEquals(1, first)
-        assertEquals(2, second)
+        assertEquals(5, first)
+        assertEquals(4, second)
         assertEquals(3, third)
-        assertEquals(4, fourth)
-        assertEquals(5, fifth)
+        assertEquals(2, fourth)
+        assertEquals(1, fifth)
     }
 
     @org.junit.Test
     fun peek() {
-        val stack = AbstractQueueImpl<Int>()
+        val stack = AbstractStackImpl<Int>()
 
         val first = stack.peek()
         stack.add(1)
@@ -44,8 +44,7 @@ class AbstractQueueImplTest {
 
     @org.junit.Test
     fun isEmpty() {
-        val stack = AbstractQueueImpl<Int>()
-
+        val stack = AbstractStackImpl<Int>()
         assertEquals(true, stack.isEmpty())
         stack.peek()
         assertEquals(true, stack.isEmpty())
@@ -57,8 +56,7 @@ class AbstractQueueImplTest {
 
     @org.junit.Test
     fun size() {
-        val stack = AbstractQueueImpl<Int>()
-
+        val stack = AbstractStackImpl<Int>()
         assertEquals(0, stack.size())
         stack.peek()
         assertEquals(0, stack.size())

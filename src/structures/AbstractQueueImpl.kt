@@ -1,4 +1,6 @@
-package nntei_jazyk.interfaces
+package nntei_jazyk.structures
+
+import nntei_jazyk.interfaces.IAbstractQueue
 
 class AbstractQueueImpl<T> : IAbstractQueue<T> {
 

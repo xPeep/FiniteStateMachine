@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Cviceni5.iml" filepath="$PROJECT_DIR$/Cviceni5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AbstractQueueAndStack.iml" filepath="$PROJECT_DIR$/AbstractQueueAndStack.iml" />
     </modules>
   </component>
 </project>
